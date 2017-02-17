@@ -1,5 +1,3 @@
-package parser;
-
 import java.lang.reflect.*;
 import java.text.ParseException;
 import java.util.Scanner;
@@ -11,6 +9,7 @@ public class Interpreter {
 	
 	public static void main(String[] args){
 		checkCommandLineArgs(args);
+		console();
 	}
 	
 	private static void checkCommandLineArgs(String[] args){
@@ -65,7 +64,6 @@ public class Interpreter {
 				System.err.println("Could not find class: " + classname);
 				System.exit(-6);
 			}
-			console();
 		}
 	}
 	
